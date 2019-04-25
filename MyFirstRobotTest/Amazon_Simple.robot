@@ -2,7 +2,6 @@
 Documentation    Sample test using selenium libraries
 Library         Selenium2Library
 Test Teardown   Close Browser
- 
 *** Test Cases ***
 I should be able to view iPhone products via search
     Open Browser    https://amazon.com    Chrome

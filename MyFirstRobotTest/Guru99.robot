@@ -9,16 +9,23 @@ ${obj_password}    xpath=//html/body/form/table/tbody/tr[2]/td[2]/input
 ${obj_loginButton}    xpath=//html/body/form/table/tbody/tr[3]/td[2]/input[1]
 ${obj_managerid}    xpath=//html/body/table/tbody/tr/td/table/tbody/tr[3]/td
 ${obj_logout}    xpath=//html/body/div[3]/div/ul/li[15]/a
+${obj_FTPage}     xpath=//html/body/div[3]/div/ul/li[10]/a
+${obj_FT_Debit}     xpath=//html/body/table/tbody/tr/td/table/tbody/tr[4]/td[2]/input
+${obj_FT_Credit}    xpath=//html/body/table/tbody/tr/td/table/tbody/tr[5]/td[2]/input
+${obj_FT_Amt}   xpath=//html/body/table/tbody/tr/td/table/tbody/tr[6]/td[2]/input
+${obj_FT_Desc}  xpath=//html/body/table/tbody/tr/td/table/tbody/tr[7]/td[2]/input
+${obj_FT_submit}    xpath=//html/body/table/tbody/tr/td/table/tbody/tr[8]/td[2]/input[1]
 ${username}    mngr191642
 ${password}    tAvetEj
+${accID}    59381
+${cusID}    33538
+${accIDCredit}  59380
+${FT_amt}   100
+${FT_desc}  TestDhanaRobot
 
 *** Test Cases ***
-Validate the login page title
-    Open the Guru99 website
-    Title should contain Guru99
-    Close Browser
-    
-The user should be able to login and view the dashboard
+
+Test Case: 001 - The user should be able to login and view the dashboard
     Open the Guru99 website
     Fill in the login field with    ${username}
     Fill in the password field with    ${password}     
@@ -26,7 +33,16 @@ The user should be able to login and view the dashboard
     Verify if the dashboard is displayed with managerid
     Logout the session
     Close Browser
-    
+
+Test Case: 002 - The user should be able to login and complete a fund transfer
+    Open the Guru99 website
+    Fill in the login field with    ${username}
+    Fill in the password field with    ${password}
+    Click on the login button
+    Initiate and Confirm the Fund Transfer to the account  ${accIDCredit}
+    Logout the session
+    Close Browser
+
 *** Keywords ***
 Open the Guru99 website
     Open Browser    http://demo.guru99.com/V4/    Chrome
@@ -46,4 +62,12 @@ Click on the login button
 Verify if the dashboard is displayed with managerid
     Page Should Contain Element    ${obj_managerid}
 Logout the session
-    Click Link    ${obj_logout}    
+    Click Link    ${obj_logout}
+Initiate and Confirm the Fund Transfer to the account
+    [Arguments]  ${accIDCredit}
+    click link  ${obj_FTPage}
+    input text  ${obj_FT_Debit}  ${accID}
+    input text  ${obj_FT_Credit}  ${accIDCredit}
+    input text  ${obj_FT_Amt}  ${FT_amt}
+    input text  ${obj_FT_Desc}  ${FT_desc}
+    log to console  Fund Transfer Completed
