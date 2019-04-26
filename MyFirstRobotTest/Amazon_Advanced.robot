@@ -37,8 +37,3 @@ The results should contain
     Wait Until Page Contains    ${search_kw}    
 Click on the first result
     Click link    ${Random_result}
-    
-    
-    
-    
-    
