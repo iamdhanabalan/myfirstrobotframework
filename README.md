@@ -11,3 +11,8 @@ The project contains the following robot test suites:
 5. Guru99 - Automating the guru99's sample web banking   
 
 PS: I'm a beginner in Robot Framework. I will keep adding different test suites as i progress
+
+Run Command: _`robot -d Results Guru99.robot && robotmetrics --inputpath ./Results/`_
+
+-d for storing the results in the "Results" directory
+robotmetrics will provide a nice report which reads the default output files from "Results" directory

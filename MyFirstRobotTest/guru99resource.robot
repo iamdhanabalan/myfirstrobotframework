@@ -15,7 +15,7 @@ ${obj_FT_Credit}    xpath=//html/body/table/tbody/tr/td/table/tbody/tr[5]/td[2]/
 ${obj_FT_Amt}   xpath=//html/body/table/tbody/tr/td/table/tbody/tr[6]/td[2]/input
 ${obj_FT_Desc}  xpath=//html/body/table/tbody/tr/td/table/tbody/tr[7]/td[2]/input
 ${obj_FT_submit}    xpath=//html/body/table/tbody/tr/td/table/tbody/tr[8]/td[2]/input[1]
-${obj_FT_continue}  xpath=//html/body/table/tbody/tr[2]/td/table/tbody/tr[5]/td/p/a
+${obj_FT_continue}  xpath=/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/table[1]/tbody[1]/tr[5]/td[1]/p[1]/a[1]
 ${username}    mngr191642
 ${password}    tAvetEj
 ${accID}    59381
@@ -53,5 +53,7 @@ Initiate and Confirm the Fund Transfer to the account
     input text  ${obj_FT_Amt}  ${FT_amt}
     input text  ${obj_FT_Desc}  ${FT_desc}
     click button  ${obj_FT_submit}
+    sleep  2s
     click link  ${obj_FT_continue}
+    sleep  2s
     log to console  Fund Transfer Completed
