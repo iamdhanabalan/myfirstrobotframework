@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190429 14:28:20.815" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
+<suite source="C:\Users\DHANPALA\MyFirstRobotFramework\MyFirstRobotTest\Guru99_Automation\Guru99.robot" id="s1" name="Guru99">
+<test id="s1-t1" name="Test Case: 001 - The user should be able to login and view the dashboard">
+<kw name="Open the Guru99 website">
+<msg timestamp="20190429 14:28:20.845" level="FAIL">No keyword with name 'Open the Guru99 website' found.</msg>
+<status status="FAIL" endtime="20190429 14:28:20.845" starttime="20190429 14:28:20.845"></status>
+</kw>
+<status status="FAIL" endtime="20190429 14:28:20.845" critical="yes" starttime="20190429 14:28:20.842">No keyword with name 'Open the Guru99 website' found.</status>
+</test>
+<test id="s1-t2" name="Test Case: 002 - The user should be able to login and complete a fund transfer">
+<kw name="Open the Guru99 website">
+<msg timestamp="20190429 14:28:20.847" level="FAIL">No keyword with name 'Open the Guru99 website' found.</msg>
+<status status="FAIL" endtime="20190429 14:28:20.847" starttime="20190429 14:28:20.847"></status>
+</kw>
+<status status="FAIL" endtime="20190429 14:28:20.847" critical="yes" starttime="20190429 14:28:20.845">No keyword with name 'Open the Guru99 website' found.</status>
+</test>
+<status status="FAIL" endtime="20190429 14:28:20.848" starttime="20190429 14:28:20.818"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="2" pass="0">Critical Tests</stat>
+<stat fail="2" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="2" id="s1" name="Guru99" pass="0">Guru99</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
