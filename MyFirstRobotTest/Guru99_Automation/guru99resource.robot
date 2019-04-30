@@ -3,12 +3,10 @@ Documentation    Test the Guru99 Banking Website
 Library         Selenium2Library
 Resource        guru99Data.robot
 Resource        guru99ObjRepo.robot
-#Library  CustomLibrary
 
 *** Keywords ***
 Open the Guru99 website
     Open Browser    http://demo.guru99.com/V4/    Chrome
-#    Open My Browser     http://demo.guru99.com/V4/    Chrome
     Maximize Browser Window
 Title should contain Guru99
     Title Should Be    ${page_title}

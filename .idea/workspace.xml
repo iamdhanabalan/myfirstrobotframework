@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f7d22a5-e8b2-43a5-ba9f-9f35a3931b2b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/Guru99.robot" beforeDir="false" afterPath="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/Guru99WebAutomation.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/Results/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/Results/log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/Results/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/Results/output.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/Results/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/Results/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/guru99ObjRepo.robot" beforeDir="false" afterPath="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/guru99ObjRepo.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/guru99resource.robot" beforeDir="false" afterPath="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/guru99resource.robot" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/guru99resource.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+            <state>
+              <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -204,7 +199,7 @@
       <workItem from="1556197945298" duration="9263000" />
       <workItem from="1556285145669" duration="103000" />
       <workItem from="1556285608854" duration="8856000" />
-      <workItem from="1556540601906" duration="10005000" />
+      <workItem from="1556540601906" duration="10303000" />
     </task>
     <task id="LOCAL-00001" summary="1. Restructured the folders and files.&#10;2. Added new test case for Guru99 (Fund Transfer)">
       <created>1556199575708</created>
@@ -252,7 +247,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34808000" />
+    <option name="totallyTimeSpent" value="35106000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -402,8 +397,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/guru99resource.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+        <state>
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
         </state>
       </provider>
     </entry>
