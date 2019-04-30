@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190430 11:11:46.861" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
+<suite source="C:\Users\DHANPALA\MyFirstRobotFramework\MyFirstRobotTest\Simple_Tests\Amazon_Simple.robot" id="s1" name="Amazon Simple">
+<test id="s1-t1" name="I should be able to view iPhone products via search">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://amazon.com</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20190430 11:11:47.283" level="INFO">Opening browser 'Chrome' to base url 'https://amazon.com'.</msg>
+<status status="PASS" endtime="20190430 11:11:56.544" starttime="20190430 11:11:47.282"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=twotabsearchtextbox</arg>
+<arg>iphone</arg>
+</arguments>
+<msg timestamp="20190430 11:11:56.547" level="INFO">Typing text 'iphone' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" endtime="20190430 11:11:58.154" starttime="20190430 11:11:56.546"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="nav-search"]/form/div[2]/div/input</arg>
+</arguments>
+<msg timestamp="20190430 11:11:58.154" level="INFO">Clicking button 'xpath=//*[@id="nav-search"]/form/div[2]/div/input'.</msg>
+<status status="PASS" endtime="20190430 11:12:00.752" starttime="20190430 11:11:58.154"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>results for "iphone"</arg>
+</arguments>
+<status status="PASS" endtime="20190430 11:12:00.821" starttime="20190430 11:12:00.752"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190430 11:12:03.200" starttime="20190430 11:12:00.821"></status>
+</kw>
+<status status="PASS" endtime="20190430 11:12:03.200" critical="yes" starttime="20190430 11:11:47.281"></status>
+</test>
+<doc>Sample test using selenium libraries</doc>
+<status status="PASS" endtime="20190430 11:12:03.201" starttime="20190430 11:11:46.865"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Amazon Simple" pass="1">Amazon Simple</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

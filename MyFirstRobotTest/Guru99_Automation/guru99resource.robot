@@ -3,10 +3,12 @@ Documentation    Test the Guru99 Banking Website
 Library         Selenium2Library
 Resource        guru99Data.robot
 Resource        guru99ObjRepo.robot
+#Library  CustomLibrary
 
 *** Keywords ***
 Open the Guru99 website
     Open Browser    http://demo.guru99.com/V4/    Chrome
+#    Open My Browser     http://demo.guru99.com/V4/    Chrome
     Maximize Browser Window
 Title should contain Guru99
     Title Should Be    ${page_title}
@@ -32,5 +34,15 @@ Initiate and Confirm the Fund Transfer to the account
     click button  ${obj_FT_submit}
     sleep  2s
     click link  ${obj_FT_continue}
+    sleep  2s
+    log to console  Fund Transfer Completed
+Deposit to the account
+    click link  ${obj_DP_page}
+    input text  ${obj_DP_acc}  ${accID}
+    input text  ${obj_DP_amt}  ${FT_amt}
+    input text  ${obj_DP_desc}  ${FT_desc}
+    click button  ${obj_DP_submit}
+    sleep  2s
+    click link  ${obj_DP_continue}
     sleep  2s
     log to console  Fund Transfer Completed

@@ -1,31 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20190429 14:28:20.815" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
-<suite source="C:\Users\DHANPALA\MyFirstRobotFramework\MyFirstRobotTest\Guru99_Automation\Guru99.robot" id="s1" name="Guru99">
+<robot rpa="false" generated="20190430 13:31:52.627" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
+<suite source="C:\Users\DHANPALA\MyFirstRobotFramework\MyFirstRobotTest\Guru99_Automation\Guru99WebAutomation.robot" id="s1" name="Guru99WebAutomation">
 <test id="s1-t1" name="Test Case: 001 - The user should be able to login and view the dashboard">
-<kw name="Open the Guru99 website">
-<msg timestamp="20190429 14:28:20.845" level="FAIL">No keyword with name 'Open the Guru99 website' found.</msg>
-<status status="FAIL" endtime="20190429 14:28:20.845" starttime="20190429 14:28:20.845"></status>
+<kw name="Open the Guru99 website" library="guru99resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://demo.guru99.com/V4/</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20190430 13:31:53.197" level="INFO">Opening browser 'Chrome' to base url 'http://demo.guru99.com/V4/'.</msg>
+<status status="PASS" endtime="20190430 13:31:59.944" starttime="20190430 13:31:53.197"></status>
 </kw>
-<status status="FAIL" endtime="20190429 14:28:20.845" critical="yes" starttime="20190429 14:28:20.842">No keyword with name 'Open the Guru99 website' found.</status>
-</test>
-<test id="s1-t2" name="Test Case: 002 - The user should be able to login and complete a fund transfer">
-<kw name="Open the Guru99 website">
-<msg timestamp="20190429 14:28:20.847" level="FAIL">No keyword with name 'Open the Guru99 website' found.</msg>
-<status status="FAIL" endtime="20190429 14:28:20.847" starttime="20190429 14:28:20.847"></status>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190430 13:32:01.070" starttime="20190430 13:31:59.944"></status>
 </kw>
-<status status="FAIL" endtime="20190429 14:28:20.847" critical="yes" starttime="20190429 14:28:20.845">No keyword with name 'Open the Guru99 website' found.</status>
+<status status="PASS" endtime="20190430 13:32:01.070" starttime="20190430 13:31:53.196"></status>
+</kw>
+<kw name="login with" library="guru99resource">
+<arguments>
+<arg>${username}</arg>
+<arg>${password}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${obj_username}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20190430 13:32:01.072" level="INFO">Typing text 'mngr191642' into text field 'xpath=//html/body/form/table/tbody/tr[1]/td[2]/input'.</msg>
+<status status="PASS" endtime="20190430 13:32:01.254" starttime="20190430 13:32:01.071"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${obj_password}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20190430 13:32:01.255" level="INFO">Typing text 'tAvetEj' into text field 'xpath=//html/body/form/table/tbody/tr[2]/td[2]/input'.</msg>
+<status status="PASS" endtime="20190430 13:32:01.393" starttime="20190430 13:32:01.254"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${obj_loginButton}</arg>
+</arguments>
+<msg timestamp="20190430 13:32:01.394" level="INFO">Clicking button 'xpath=//html/body/form/table/tbody/tr[3]/td[2]/input[1]'.</msg>
+<status status="PASS" endtime="20190430 13:32:02.401" starttime="20190430 13:32:01.394"></status>
+</kw>
+<status status="PASS" endtime="20190430 13:32:02.401" starttime="20190430 13:32:01.070"></status>
+</kw>
+<kw name="Verify if the dashboard is displayed with" library="guru99resource">
+<arguments>
+<arg>${managerid}</arg>
+</arguments>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${obj_managerid}</arg>
+</arguments>
+<msg timestamp="20190430 13:32:02.423" level="INFO">Current page contains element 'xpath=//html/body/table/tbody/tr/td/table/tbody/tr[3]/td'.</msg>
+<status status="PASS" endtime="20190430 13:32:02.423" starttime="20190430 13:32:02.403"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>User logged in successfully!</arg>
+</arguments>
+<status status="PASS" endtime="20190430 13:32:02.424" starttime="20190430 13:32:02.424"></status>
+</kw>
+<status status="PASS" endtime="20190430 13:32:02.424" starttime="20190430 13:32:02.401"></status>
+</kw>
+<kw name="Logout the session" library="guru99resource">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${obj_logout}</arg>
+</arguments>
+<msg timestamp="20190430 13:32:02.425" level="INFO">Clicking link 'xpath=//html/body/div[3]/div/ul/li[15]/a'.</msg>
+<status status="PASS" endtime="20190430 13:32:04.838" starttime="20190430 13:32:02.425"></status>
+</kw>
+<status status="PASS" endtime="20190430 13:32:04.838" starttime="20190430 13:32:02.424"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190430 13:32:07.133" starttime="20190430 13:32:04.838"></status>
+</kw>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" endtime="20190430 13:32:07.134" critical="yes" starttime="20190430 13:31:53.196"></status>
 </test>
-<status status="FAIL" endtime="20190429 14:28:20.848" starttime="20190429 14:28:20.818"></status>
+<doc>Test the Guru99 Banking Website</doc>
+<status status="PASS" endtime="20190430 13:32:07.134" starttime="20190430 13:31:52.632"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="2" pass="0">Critical Tests</stat>
-<stat fail="2" pass="0">All Tests</stat>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
+<stat fail="0" pass="1">Smoke</stat>
 </tag>
 <suite>
-<stat fail="2" id="s1" name="Guru99" pass="0">Guru99</stat>
+<stat fail="0" id="s1" name="Guru99WebAutomation" pass="1">Guru99WebAutomation</stat>
 </suite>
 </statistics>
 <errors>
