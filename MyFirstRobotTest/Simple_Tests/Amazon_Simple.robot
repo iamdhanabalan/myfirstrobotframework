@@ -7,6 +7,6 @@ I should be able to view iPhone products via search
     Open Browser    https://amazon.com    Chrome
     Input Text    id=twotabsearchtextbox    iphone
     Click Button    xpath=//*[@id="nav-search"]/form/div[2]/div/input
-    Wait Until Page Contains    results for "iphone"
+    Wait Until Page Contains    results for "chumma"
     
     
