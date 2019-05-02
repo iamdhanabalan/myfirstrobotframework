@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3f7d22a5-e8b2-43a5-ba9f-9f35a3931b2b" name="Default Changelist" comment="" />
+    <list default="true" id="3f7d22a5-e8b2-43a5-ba9f-9f35a3931b2b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/CustomLibrary.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/CustomLibrary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/Results/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/Results/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/Results/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/Results/output.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/Results/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/Results/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/guru99resource.robot" beforeDir="false" afterPath="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/guru99resource.robot" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,11 +20,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/Guru99WebAutomation.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="425">
+              <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
               <folding>
                 <element signature="e#0#102#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="357">
+                <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -34,29 +53,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/guru99ObjRepo.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="24" column="17" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/guru99resource.robot">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+            <state>
+              <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/guru99resource.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#0#196#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/CustomLibrary.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" column="43" lean-forward="true" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -90,8 +109,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/guru99ObjRepo.robot" />
         <option value="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/Guru99.robot" />
-        <option value="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/guru99resource.robot" />
         <option value="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/CustomLibrary.py" />
+        <option value="$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/guru99resource.robot" />
       </list>
     </option>
   </component>
@@ -200,7 +219,8 @@
       <workItem from="1556197945298" duration="9263000" />
       <workItem from="1556285145669" duration="103000" />
       <workItem from="1556285608854" duration="8856000" />
-      <workItem from="1556540601906" duration="11517000" />
+      <workItem from="1556540601906" duration="12515000" />
+      <workItem from="1556626984481" duration="6496000" />
     </task>
     <task id="LOCAL-00001" summary="1. Restructured the folders and files.&#10;2. Added new test case for Guru99 (Fund Transfer)">
       <created>1556199575708</created>
@@ -248,18 +268,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36320000" />
+    <option name="totallyTimeSpent" value="43814000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15245202" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15405117" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3564464" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3564464" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -268,7 +288,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.37811485" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.37811485" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -355,20 +375,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/guru99ObjRepo.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/CustomLibrary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="43" lean-forward="true" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="51">
-            <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
+          <first_editor relative-caret-position="357">
+            <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/guru99ObjRepo.robot">
+    <entry file="file://$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/Guru99WebAutomation.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="17" />
+        <state relative-caret-position="425">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#102#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -379,29 +416,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/Guru99WebAutomation.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#102#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/guru99resource.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyFirstRobotTest/Guru99_Automation/CustomLibrary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#0#196#0" expanded="true" />
           </folding>
         </state>
       </provider>

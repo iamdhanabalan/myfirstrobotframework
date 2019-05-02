@@ -3,9 +3,11 @@ Documentation    Test the Guru99 Banking Website
 Library         Selenium2Library
 Resource        guru99Data.robot
 Resource        guru99ObjRepo.robot
+Library     CustomLibrary.py
 
 *** Keywords ***
 Open the Guru99 website
+#    Open My Browser
     Open Browser    http://demo.guru99.com/V4/    Chrome
     Maximize Browser Window
 Title should contain Guru99

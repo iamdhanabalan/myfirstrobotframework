@@ -12,7 +12,7 @@ The project contains the following robot test suites:
     * Amazon_Advanced - Progressed a bit from the Simple Test Suite 
 * Guru99_Automation - Automating the guru99's sample web banking   
 
-Run Command: _`robot -d Results Guru99.robot && robotmetrics --inputpath ./Results/`_
+Run Command: _`robot -d Results Guru99WebAutomation.robot && robotmetrics --inputpath ./Results/`_
 
 -d for storing the results in the "Results" directory
 robotmetrics will provide a nice report which reads the default output files from "Results" directory
