@@ -8,7 +8,7 @@ Library     CustomLibrary.py
 *** Keywords ***
 Open the Guru99 website
 #    Open My Browser
-    Open Browser    http://demo.guru99.com/V4/    Chrome
+    Open Browser    http://demo.guru99.com/V4/    Firefox
     Maximize Browser Window
 Title should contain Guru99
     Title Should Be    ${page_title}

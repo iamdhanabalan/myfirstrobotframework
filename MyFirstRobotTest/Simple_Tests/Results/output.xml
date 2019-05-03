@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20190502 16:31:13.212" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
+<robot rpa="false" generated="20190502 16:39:59.735" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
 <suite source="C:\Users\DHANPALA\MyFirstRobotFramework\MyFirstRobotTest\Simple_Tests\Amazon_Simple.robot" id="s1" name="Amazon Simple">
 <test id="s1-t1" name="I should be able to view iPhone products via search">
 <kw name="Open Browser" library="Selenium2Library">
@@ -8,8 +8,8 @@
 <arg>https://amazon.com</arg>
 <arg>Chrome</arg>
 </arguments>
-<msg timestamp="20190502 16:31:13.686" level="INFO">Opening browser 'Chrome' to base url 'https://amazon.com'.</msg>
-<status status="PASS" endtime="20190502 16:31:23.761" starttime="20190502 16:31:13.686"></status>
+<msg timestamp="20190502 16:40:00.398" level="INFO">Opening browser 'Chrome' to base url 'https://amazon.com'.</msg>
+<status status="PASS" endtime="20190502 16:40:09.337" starttime="20190502 16:40:00.397"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -17,42 +17,48 @@
 <arg>id=twotabsearchtextbox</arg>
 <arg>iphone</arg>
 </arguments>
-<msg timestamp="20190502 16:31:23.762" level="INFO">Typing text 'iphone' into text field 'id=twotabsearchtextbox'.</msg>
-<status status="PASS" endtime="20190502 16:31:25.387" starttime="20190502 16:31:23.761"></status>
+<msg timestamp="20190502 16:40:09.346" level="INFO">Typing text 'iphone' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" endtime="20190502 16:40:10.991" starttime="20190502 16:40:09.345"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//*[@id="nav-search"]/form/div[2]/div/input</arg>
 </arguments>
-<msg timestamp="20190502 16:31:25.389" level="INFO">Clicking button 'xpath=//*[@id="nav-search"]/form/div[2]/div/input'.</msg>
-<status status="PASS" endtime="20190502 16:31:28.834" starttime="20190502 16:31:25.388"></status>
+<msg timestamp="20190502 16:40:10.992" level="INFO">Clicking button 'xpath=//*[@id="nav-search"]/form/div[2]/div/input'.</msg>
+<status status="PASS" endtime="20190502 16:40:13.913" starttime="20190502 16:40:10.991"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
-<arg>results for "iphone"</arg>
+<arg>results for "chumma"</arg>
 </arguments>
-<status status="PASS" endtime="20190502 16:31:28.906" starttime="20190502 16:31:28.835"></status>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190502 16:40:19.383" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190502 16:40:19.383" starttime="20190502 16:40:19.048"></status>
+</kw>
+<msg timestamp="20190502 16:40:19.385" level="FAIL">Text 'results for "chumma"' did not appear in 5 seconds.</msg>
+<status status="FAIL" endtime="20190502 16:40:19.385" starttime="20190502 16:40:13.914"></status>
 </kw>
 <kw type="teardown" name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20190502 16:31:31.354" starttime="20190502 16:31:28.907"></status>
+<status status="PASS" endtime="20190502 16:40:21.734" starttime="20190502 16:40:19.386"></status>
 </kw>
-<status status="PASS" endtime="20190502 16:31:31.354" critical="yes" starttime="20190502 16:31:13.685"></status>
+<status status="FAIL" endtime="20190502 16:40:21.734" critical="yes" starttime="20190502 16:40:00.396">Text 'results for "chumma"' did not appear in 5 seconds.</status>
 </test>
 <doc>Sample test using selenium libraries</doc>
-<status status="PASS" endtime="20190502 16:31:31.355" starttime="20190502 16:31:13.216"></status>
+<status status="FAIL" endtime="20190502 16:40:21.736" starttime="20190502 16:39:59.750"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="1">Critical Tests</stat>
-<stat fail="0" pass="1">All Tests</stat>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Amazon Simple" pass="1">Amazon Simple</stat>
+<stat fail="1" id="s1" name="Amazon Simple" pass="0">Amazon Simple</stat>
 </suite>
 </statistics>
 <errors>

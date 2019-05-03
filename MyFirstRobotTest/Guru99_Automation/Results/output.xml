@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20190502 16:30:12.215" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
+<robot rpa="false" generated="20190503 09:34:03.295" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
 <suite source="C:\Users\DHANPALA\MyFirstRobotFramework\MyFirstRobotTest\Guru99_Automation\Guru99WebAutomation.robot" id="s1" name="Guru99WebAutomation">
 <test id="s1-t1" name="Test Case: 001 - The user should be able to login and view the dashboard">
 <kw name="Open the Guru99 website" library="guru99resource">
@@ -7,37 +7,104 @@
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
 <arg>http://demo.guru99.com/V4/</arg>
-<arg>ie</arg>
+<arg>Firefox</arg>
 </arguments>
-<msg timestamp="20190502 16:30:12.818" level="INFO">Opening browser 'ie' to base url 'http://demo.guru99.com/V4/'.</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190502 16:30:17.902" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" endtime="20190502 16:30:17.902" starttime="20190502 16:30:17.901"></status>
+<msg timestamp="20190503 09:34:03.869" level="INFO">Opening browser 'Firefox' to base url 'http://demo.guru99.com/V4/'.</msg>
+<status status="PASS" endtime="20190503 09:34:20.129" starttime="20190503 09:34:03.869"></status>
 </kw>
-<msg timestamp="20190502 16:30:17.937" level="FAIL">ProtocolError: ('Connection aborted.', error(10054, 'An existing connection was forcibly closed by the remote host'))</msg>
-<status status="FAIL" endtime="20190502 16:30:17.938" starttime="20190502 16:30:12.817"></status>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190503 09:34:20.422" starttime="20190503 09:34:20.130"></status>
 </kw>
-<status status="FAIL" endtime="20190502 16:30:19.950" starttime="20190502 16:30:12.817"></status>
+<status status="PASS" endtime="20190503 09:34:20.422" starttime="20190503 09:34:03.868"></status>
+</kw>
+<kw name="login with" library="guru99resource">
+<arguments>
+<arg>${username}</arg>
+<arg>${password}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${obj_username}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20190503 09:34:20.423" level="INFO">Typing text 'mngr191642' into text field 'xpath=//html/body/form/table/tbody/tr[1]/td[2]/input'.</msg>
+<status status="PASS" endtime="20190503 09:34:20.486" starttime="20190503 09:34:20.423"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${obj_password}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20190503 09:34:20.487" level="INFO">Typing text 'tAvetEj' into text field 'xpath=//html/body/form/table/tbody/tr[2]/td[2]/input'.</msg>
+<status status="PASS" endtime="20190503 09:34:20.541" starttime="20190503 09:34:20.486"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${obj_loginButton}</arg>
+</arguments>
+<msg timestamp="20190503 09:34:20.542" level="INFO">Clicking button 'xpath=//html/body/form/table/tbody/tr[3]/td[2]/input[1]'.</msg>
+<status status="PASS" endtime="20190503 09:34:21.890" starttime="20190503 09:34:20.542"></status>
+</kw>
+<status status="PASS" endtime="20190503 09:34:21.890" starttime="20190503 09:34:20.422"></status>
+</kw>
+<kw name="Verify if the dashboard is displayed with" library="guru99resource">
+<arguments>
+<arg>${managerid}</arg>
+</arguments>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${obj_managerid}</arg>
+</arguments>
+<msg timestamp="20190503 09:34:21.905" level="INFO">Current page contains element 'xpath=//html/body/table/tbody/tr/td/table/tbody/tr[3]/td'.</msg>
+<status status="PASS" endtime="20190503 09:34:21.905" starttime="20190503 09:34:21.891"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>User logged in successfully!</arg>
+</arguments>
+<status status="PASS" endtime="20190503 09:34:21.906" starttime="20190503 09:34:21.905"></status>
+</kw>
+<status status="PASS" endtime="20190503 09:34:21.906" starttime="20190503 09:34:21.890"></status>
+</kw>
+<kw name="Logout the session" library="guru99resource">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${obj_logout}</arg>
+</arguments>
+<msg timestamp="20190503 09:34:21.907" level="INFO">Clicking link 'xpath=//html/body/div[3]/div/ul/li[15]/a'.</msg>
+<status status="PASS" endtime="20190503 09:34:22.593" starttime="20190503 09:34:21.907"></status>
+</kw>
+<status status="PASS" endtime="20190503 09:34:22.594" starttime="20190503 09:34:21.906"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190503 09:34:27.921" starttime="20190503 09:34:22.594"></status>
 </kw>
 <tags>
 <tag>Smoke</tag>
 </tags>
-<status status="FAIL" endtime="20190502 16:30:19.951" critical="yes" starttime="20190502 16:30:12.815">ProtocolError: ('Connection aborted.', error(10054, 'An existing connection was forcibly closed by the remote host'))</status>
+<status status="PASS" endtime="20190503 09:34:27.922" critical="yes" starttime="20190503 09:34:03.867"></status>
 </test>
 <doc>Test the Guru99 Banking Website</doc>
-<status status="FAIL" endtime="20190502 16:30:19.952" starttime="20190502 16:30:12.219"></status>
+<status status="PASS" endtime="20190503 09:34:27.924" starttime="20190503 09:34:03.299"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="0">Critical Tests</stat>
-<stat fail="1" pass="0">All Tests</stat>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
-<stat fail="1" pass="0">Smoke</stat>
+<stat fail="0" pass="1">Smoke</stat>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="Guru99WebAutomation" pass="0">Guru99WebAutomation</stat>
+<stat fail="0" id="s1" name="Guru99WebAutomation" pass="1">Guru99WebAutomation</stat>
 </suite>
 </statistics>
 <errors>
