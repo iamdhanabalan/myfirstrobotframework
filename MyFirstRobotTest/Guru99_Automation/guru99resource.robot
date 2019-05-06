@@ -9,7 +9,7 @@ Library     CustomLibrary.py
 Open the Guru99 website and login with
 #    Open My Browser
     [Arguments]    ${username}      ${password}
-    Open Browser    http://demo.guru99.com/V4/    Firefox
+    Open Browser    http://demo.guru99.com/V4/      ${custombrowser}
     Maximize Browser Window
     Input Text    ${obj_username}    ${username}
     Input Text    ${obj_password}    ${password}
