@@ -6,7 +6,7 @@ node {
     }
    stage('Run Tests')
    {
-        bat label: '', script: 'robot -d Results -i Smoke MyFirstRobotTest\\Guru99_Automation\\Guru99WebAutomation.robot && robotmetrics --inputpath ./Results/'
+        bat label: '', script: 'robot -d Results MyFirstRobotTest\\Guru99_Automation\\Guru99WebAutomation.robot && robotmetrics --inputpath ./Results/'
    }
    stage('Generate Report')
    {
