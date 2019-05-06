@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20190506 15:09:10.354" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
+<robot rpa="false" generated="20190506 15:53:49.958" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
 <suite source="C:\Users\DHANPALA\MyFirstRobotFramework\MyFirstRobotTest\Guru99_Automation\Guru99WebAutomation.robot" id="s1" name="Guru99WebAutomation">
 <test id="s1-t1" name="Test Case: 001 - The user should be able to login and view the dashboard">
 <kw type="setup" name="Open the Guru99 website and login with" library="guru99resource">
@@ -11,14 +11,14 @@
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
 <arg>http://demo.guru99.com/V4/</arg>
-<arg>Firefox</arg>
+<arg>${custombrowser}</arg>
 </arguments>
-<msg timestamp="20190506 15:09:10.704" level="INFO">Opening browser 'Firefox' to base url 'http://demo.guru99.com/V4/'.</msg>
-<status status="PASS" endtime="20190506 15:09:22.057" starttime="20190506 15:09:10.703"></status>
+<msg timestamp="20190506 15:53:50.292" level="INFO">Opening browser 'chrome' to base url 'http://demo.guru99.com/V4/'.</msg>
+<status status="PASS" endtime="20190506 15:53:56.474" starttime="20190506 15:53:50.292"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20190506 15:09:22.324" starttime="20190506 15:09:22.057"></status>
+<status status="PASS" endtime="20190506 15:53:57.621" starttime="20190506 15:53:56.475"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -26,8 +26,8 @@
 <arg>${obj_username}</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20190506 15:09:22.325" level="INFO">Typing text 'mngr191642' into text field 'xpath=//html/body/form/table/tbody/tr[1]/td[2]/input'.</msg>
-<status status="PASS" endtime="20190506 15:09:22.386" starttime="20190506 15:09:22.324"></status>
+<msg timestamp="20190506 15:53:57.621" level="INFO">Typing text 'mngr191642' into text field 'xpath=//html/body/form/table/tbody/tr[1]/td[2]/input'.</msg>
+<status status="PASS" endtime="20190506 15:53:57.763" starttime="20190506 15:53:57.621"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -35,18 +35,18 @@
 <arg>${obj_password}</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20190506 15:09:22.386" level="INFO">Typing text 'tAvetEj' into text field 'xpath=//html/body/form/table/tbody/tr[2]/td[2]/input'.</msg>
-<status status="PASS" endtime="20190506 15:09:22.444" starttime="20190506 15:09:22.386"></status>
+<msg timestamp="20190506 15:53:57.763" level="INFO">Typing text 'tAvetEj' into text field 'xpath=//html/body/form/table/tbody/tr[2]/td[2]/input'.</msg>
+<status status="PASS" endtime="20190506 15:53:57.857" starttime="20190506 15:53:57.763"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${obj_loginButton}</arg>
 </arguments>
-<msg timestamp="20190506 15:09:22.445" level="INFO">Clicking button 'xpath=//html/body/form/table/tbody/tr[3]/td[2]/input[1]'.</msg>
-<status status="PASS" endtime="20190506 15:09:23.979" starttime="20190506 15:09:22.444"></status>
+<msg timestamp="20190506 15:53:57.858" level="INFO">Clicking button 'xpath=//html/body/form/table/tbody/tr[3]/td[2]/input[1]'.</msg>
+<status status="PASS" endtime="20190506 15:53:58.841" starttime="20190506 15:53:57.857"></status>
 </kw>
-<status status="PASS" endtime="20190506 15:09:23.979" starttime="20190506 15:09:10.703"></status>
+<status status="PASS" endtime="20190506 15:53:58.841" starttime="20190506 15:53:50.291"></status>
 </kw>
 <kw name="Verify if the dashboard is displayed with" library="guru99resource">
 <arguments>
@@ -57,17 +57,17 @@
 <arguments>
 <arg>${obj_managerid}</arg>
 </arguments>
-<msg timestamp="20190506 15:09:23.998" level="INFO">Current page contains element 'xpath=//html/body/table/tbody/tr/td/table/tbody/tr[3]/td'.</msg>
-<status status="PASS" endtime="20190506 15:09:23.998" starttime="20190506 15:09:23.983"></status>
+<msg timestamp="20190506 15:53:58.863" level="INFO">Current page contains element 'xpath=//html/body/table/tbody/tr/td/table/tbody/tr[3]/td'.</msg>
+<status status="PASS" endtime="20190506 15:53:58.863" starttime="20190506 15:53:58.842"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>User logged in successfully!</arg>
 </arguments>
-<status status="PASS" endtime="20190506 15:09:23.999" starttime="20190506 15:09:23.998"></status>
+<status status="PASS" endtime="20190506 15:53:58.867" starttime="20190506 15:53:58.864"></status>
 </kw>
-<status status="PASS" endtime="20190506 15:09:23.999" starttime="20190506 15:09:23.982"></status>
+<status status="PASS" endtime="20190506 15:53:58.868" starttime="20190506 15:53:58.842"></status>
 </kw>
 <kw type="teardown" name="Logout the session and close the browser" library="guru99resource">
 <kw name="Click Link" library="Selenium2Library">
@@ -75,338 +75,33 @@
 <arguments>
 <arg>${obj_logout}</arg>
 </arguments>
-<msg timestamp="20190506 15:09:24.000" level="INFO">Clicking link 'xpath=//html/body/div[3]/div/ul/li[15]/a'.</msg>
-<status status="PASS" endtime="20190506 15:09:24.618" starttime="20190506 15:09:23.999"></status>
+<msg timestamp="20190506 15:53:58.869" level="INFO">Clicking link 'xpath=//html/body/div[3]/div/ul/li[15]/a'.</msg>
+<status status="PASS" endtime="20190506 15:53:59.360" starttime="20190506 15:53:58.869"></status>
 </kw>
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20190506 15:09:29.194" starttime="20190506 15:09:24.619"></status>
+<status status="PASS" endtime="20190506 15:54:01.634" starttime="20190506 15:53:59.360"></status>
 </kw>
-<status status="PASS" endtime="20190506 15:09:29.194" starttime="20190506 15:09:23.999"></status>
+<status status="PASS" endtime="20190506 15:54:01.634" starttime="20190506 15:53:58.868"></status>
 </kw>
 <tags>
 <tag>Smoke</tag>
 </tags>
-<status status="PASS" endtime="20190506 15:09:29.194" critical="yes" starttime="20190506 15:09:10.703"></status>
-</test>
-<test id="s1-t2" name="Test Case: 002 - The user should be to initiate and complete a fund transfer">
-<kw type="setup" name="Open the Guru99 website and login with" library="guru99resource">
-<arguments>
-<arg>${username}</arg>
-<arg>${password}</arg>
-</arguments>
-<kw name="Open Browser" library="Selenium2Library">
-<doc>Opens a new browser instance to the given ``url``.</doc>
-<arguments>
-<arg>http://demo.guru99.com/V4/</arg>
-<arg>Firefox</arg>
-</arguments>
-<msg timestamp="20190506 15:09:29.198" level="INFO">Opening browser 'Firefox' to base url 'http://demo.guru99.com/V4/'.</msg>
-<status status="PASS" endtime="20190506 15:09:40.786" starttime="20190506 15:09:29.197"></status>
-</kw>
-<kw name="Maximize Browser Window" library="Selenium2Library">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20190506 15:09:41.045" starttime="20190506 15:09:40.787"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${obj_username}</arg>
-<arg>${username}</arg>
-</arguments>
-<msg timestamp="20190506 15:09:41.045" level="INFO">Typing text 'mngr191642' into text field 'xpath=//html/body/form/table/tbody/tr[1]/td[2]/input'.</msg>
-<status status="PASS" endtime="20190506 15:09:41.097" starttime="20190506 15:09:41.045"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${obj_password}</arg>
-<arg>${password}</arg>
-</arguments>
-<msg timestamp="20190506 15:09:41.098" level="INFO">Typing text 'tAvetEj' into text field 'xpath=//html/body/form/table/tbody/tr[2]/td[2]/input'.</msg>
-<status status="PASS" endtime="20190506 15:09:41.147" starttime="20190506 15:09:41.098"></status>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>${obj_loginButton}</arg>
-</arguments>
-<msg timestamp="20190506 15:09:41.148" level="INFO">Clicking button 'xpath=//html/body/form/table/tbody/tr[3]/td[2]/input[1]'.</msg>
-<status status="PASS" endtime="20190506 15:09:42.611" starttime="20190506 15:09:41.148"></status>
-</kw>
-<status status="PASS" endtime="20190506 15:09:42.611" starttime="20190506 15:09:29.197"></status>
-</kw>
-<kw name="Initiate and Confirm the Fund Transfer to the account" library="guru99resource">
-<arguments>
-<arg>${accIDCredit}</arg>
-</arguments>
-<kw name="Click Link" library="Selenium2Library">
-<doc>Clicks a link identified by ``locator``.</doc>
-<arguments>
-<arg>${obj_FTPage}</arg>
-</arguments>
-<msg timestamp="20190506 15:09:42.615" level="INFO">Clicking link 'xpath=//html/body/div[3]/div/ul/li[10]/a'.</msg>
-<status status="PASS" endtime="20190506 15:09:43.511" starttime="20190506 15:09:42.615"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${obj_FT_Debit}</arg>
-<arg>${accID}</arg>
-</arguments>
-<msg timestamp="20190506 15:09:43.511" level="INFO">Typing text '59381' into text field 'xpath=//html/body/table/tbody/tr/td/table/tbody/tr[4]/td[2]/input'.</msg>
-<status status="PASS" endtime="20190506 15:09:43.557" starttime="20190506 15:09:43.511"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${obj_FT_Credit}</arg>
-<arg>${accIDCredit}</arg>
-</arguments>
-<msg timestamp="20190506 15:09:43.559" level="INFO">Typing text '59380' into text field 'xpath=//html/body/table/tbody/tr/td/table/tbody/tr[5]/td[2]/input'.</msg>
-<status status="PASS" endtime="20190506 15:09:43.598" starttime="20190506 15:09:43.558"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${obj_FT_Amt}</arg>
-<arg>${FT_amt}</arg>
-</arguments>
-<msg timestamp="20190506 15:09:43.599" level="INFO">Typing text '100' into text field 'xpath=//html/body/table/tbody/tr/td/table/tbody/tr[6]/td[2]/input'.</msg>
-<status status="PASS" endtime="20190506 15:09:43.633" starttime="20190506 15:09:43.598"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${obj_FT_Desc}</arg>
-<arg>${FT_desc}</arg>
-</arguments>
-<msg timestamp="20190506 15:09:43.633" level="INFO">Typing text 'TestDhanaRobot' into text field 'xpath=//html/body/table/tbody/tr/td/table/tbody/tr[7]/td[2]/input'.</msg>
-<status status="PASS" endtime="20190506 15:09:43.685" starttime="20190506 15:09:43.633"></status>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>${obj_FT_submit}</arg>
-</arguments>
-<msg timestamp="20190506 15:09:43.686" level="INFO">Clicking button 'xpath=//html/body/table/tbody/tr/td/table/tbody/tr[8]/td[2]/input[1]'.</msg>
-<status status="PASS" endtime="20190506 15:09:44.552" starttime="20190506 15:09:43.686"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20190506 15:09:46.552" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20190506 15:09:46.552" starttime="20190506 15:09:44.552"></status>
-</kw>
-<kw name="Click Link" library="Selenium2Library">
-<doc>Clicks a link identified by ``locator``.</doc>
-<arguments>
-<arg>${obj_FT_continue}</arg>
-</arguments>
-<msg timestamp="20190506 15:09:46.552" level="INFO">Clicking link 'xpath=//html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/table[1]/tbody[1]/tr[5]/td[1]/p[1]/a[1]'.</msg>
-<status status="PASS" endtime="20190506 15:09:47.401" starttime="20190506 15:09:46.552"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20190506 15:09:49.402" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20190506 15:09:49.402" starttime="20190506 15:09:47.401"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>Fund Transfer Completed</arg>
-</arguments>
-<status status="PASS" endtime="20190506 15:09:49.402" starttime="20190506 15:09:49.402"></status>
-</kw>
-<status status="PASS" endtime="20190506 15:09:49.403" starttime="20190506 15:09:42.614"></status>
-</kw>
-<kw type="teardown" name="Logout the session and close the browser" library="guru99resource">
-<kw name="Click Link" library="Selenium2Library">
-<doc>Clicks a link identified by ``locator``.</doc>
-<arguments>
-<arg>${obj_logout}</arg>
-</arguments>
-<msg timestamp="20190506 15:09:49.404" level="INFO">Clicking link 'xpath=//html/body/div[3]/div/ul/li[15]/a'.</msg>
-<status status="PASS" endtime="20190506 15:09:50.169" starttime="20190506 15:09:49.404"></status>
-</kw>
-<kw name="Close Browser" library="Selenium2Library">
-<doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20190506 15:09:58.029" starttime="20190506 15:09:50.170"></status>
-</kw>
-<status status="PASS" endtime="20190506 15:09:58.029" starttime="20190506 15:09:49.403"></status>
-</kw>
-<tags>
-<tag>FT</tag>
-<tag>Full</tag>
-</tags>
-<status status="PASS" endtime="20190506 15:09:58.030" critical="yes" starttime="20190506 15:09:29.196"></status>
-</test>
-<test id="s1-t3" name="Test Case: 003 - The user should be to deposit into an account">
-<kw type="setup" name="Open the Guru99 website and login with" library="guru99resource">
-<arguments>
-<arg>${username}</arg>
-<arg>${password}</arg>
-</arguments>
-<kw name="Open Browser" library="Selenium2Library">
-<doc>Opens a new browser instance to the given ``url``.</doc>
-<arguments>
-<arg>http://demo.guru99.com/V4/</arg>
-<arg>Firefox</arg>
-</arguments>
-<msg timestamp="20190506 15:09:58.032" level="INFO">Opening browser 'Firefox' to base url 'http://demo.guru99.com/V4/'.</msg>
-<status status="PASS" endtime="20190506 15:10:08.857" starttime="20190506 15:09:58.032"></status>
-</kw>
-<kw name="Maximize Browser Window" library="Selenium2Library">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20190506 15:10:09.134" starttime="20190506 15:10:08.858"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${obj_username}</arg>
-<arg>${username}</arg>
-</arguments>
-<msg timestamp="20190506 15:10:09.135" level="INFO">Typing text 'mngr191642' into text field 'xpath=//html/body/form/table/tbody/tr[1]/td[2]/input'.</msg>
-<status status="PASS" endtime="20190506 15:10:09.213" starttime="20190506 15:10:09.134"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${obj_password}</arg>
-<arg>${password}</arg>
-</arguments>
-<msg timestamp="20190506 15:10:09.214" level="INFO">Typing text 'tAvetEj' into text field 'xpath=//html/body/form/table/tbody/tr[2]/td[2]/input'.</msg>
-<status status="PASS" endtime="20190506 15:10:09.254" starttime="20190506 15:10:09.213"></status>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>${obj_loginButton}</arg>
-</arguments>
-<msg timestamp="20190506 15:10:09.255" level="INFO">Clicking button 'xpath=//html/body/form/table/tbody/tr[3]/td[2]/input[1]'.</msg>
-<status status="PASS" endtime="20190506 15:10:10.469" starttime="20190506 15:10:09.255"></status>
-</kw>
-<status status="PASS" endtime="20190506 15:10:10.469" starttime="20190506 15:09:58.032"></status>
-</kw>
-<kw name="Deposit to the account" library="guru99resource">
-<kw name="Click Link" library="Selenium2Library">
-<doc>Clicks a link identified by ``locator``.</doc>
-<arguments>
-<arg>${obj_DP_page}</arg>
-</arguments>
-<msg timestamp="20190506 15:10:10.471" level="INFO">Clicking link 'xpath=//a[contains(text(),'Deposit')]'.</msg>
-<status status="PASS" endtime="20190506 15:10:11.212" starttime="20190506 15:10:10.470"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${obj_DP_acc}</arg>
-<arg>${accID}</arg>
-</arguments>
-<msg timestamp="20190506 15:10:11.215" level="INFO">Typing text '59381' into text field 'xpath=//input[@name='accountno']'.</msg>
-<status status="PASS" endtime="20190506 15:10:11.304" starttime="20190506 15:10:11.213"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${obj_DP_amt}</arg>
-<arg>${FT_amt}</arg>
-</arguments>
-<msg timestamp="20190506 15:10:11.304" level="INFO">Typing text '100' into text field 'xpath=//input[@name='ammount']'.</msg>
-<status status="PASS" endtime="20190506 15:10:11.367" starttime="20190506 15:10:11.304"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${obj_DP_desc}</arg>
-<arg>${FT_desc}</arg>
-</arguments>
-<msg timestamp="20190506 15:10:11.367" level="INFO">Typing text 'TestDhanaRobot' into text field 'xpath=//input[@name='desc']'.</msg>
-<status status="PASS" endtime="20190506 15:10:11.413" starttime="20190506 15:10:11.367"></status>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>${obj_DP_submit}</arg>
-</arguments>
-<msg timestamp="20190506 15:10:11.414" level="INFO">Clicking button 'xpath=//input[@name='AccSubmit']'.</msg>
-<status status="PASS" endtime="20190506 15:10:12.272" starttime="20190506 15:10:11.413"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20190506 15:10:14.273" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20190506 15:10:14.273" starttime="20190506 15:10:12.273"></status>
-</kw>
-<kw name="Click Link" library="Selenium2Library">
-<doc>Clicks a link identified by ``locator``.</doc>
-<arguments>
-<arg>${obj_DP_continue}</arg>
-</arguments>
-<msg timestamp="20190506 15:10:14.273" level="INFO">Clicking link 'xpath=//a[contains(text(),'Continue')]'.</msg>
-<status status="PASS" endtime="20190506 15:10:15.167" starttime="20190506 15:10:14.273"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20190506 15:10:17.168" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20190506 15:10:17.168" starttime="20190506 15:10:15.167"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>Deposit Process Completed</arg>
-</arguments>
-<status status="PASS" endtime="20190506 15:10:17.169" starttime="20190506 15:10:17.168"></status>
-</kw>
-<status status="PASS" endtime="20190506 15:10:17.170" starttime="20190506 15:10:10.470"></status>
-</kw>
-<kw type="teardown" name="Logout the session and close the browser" library="guru99resource">
-<kw name="Click Link" library="Selenium2Library">
-<doc>Clicks a link identified by ``locator``.</doc>
-<arguments>
-<arg>${obj_logout}</arg>
-</arguments>
-<msg timestamp="20190506 15:10:17.172" level="INFO">Clicking link 'xpath=//html/body/div[3]/div/ul/li[15]/a'.</msg>
-<status status="PASS" endtime="20190506 15:10:17.979" starttime="20190506 15:10:17.171"></status>
-</kw>
-<kw name="Close Browser" library="Selenium2Library">
-<doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20190506 15:10:27.043" starttime="20190506 15:10:17.979"></status>
-</kw>
-<status status="PASS" endtime="20190506 15:10:27.043" starttime="20190506 15:10:17.171"></status>
-</kw>
-<tags>
-<tag>DP</tag>
-<tag>Full</tag>
-</tags>
-<status status="PASS" endtime="20190506 15:10:27.043" critical="yes" starttime="20190506 15:09:58.031"></status>
+<status status="PASS" endtime="20190506 15:54:01.635" critical="yes" starttime="20190506 15:53:50.290"></status>
 </test>
 <doc>Test the Guru99 Banking Website</doc>
-<status status="PASS" endtime="20190506 15:10:27.046" starttime="20190506 15:09:10.357"></status>
+<status status="PASS" endtime="20190506 15:54:01.639" starttime="20190506 15:53:49.961"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="3">Critical Tests</stat>
-<stat fail="0" pass="3">All Tests</stat>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
-<stat fail="0" pass="1">DP</stat>
-<stat fail="0" pass="1">FT</stat>
-<stat fail="0" pass="2">Full</stat>
 <stat fail="0" pass="1">Smoke</stat>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Guru99WebAutomation" pass="3">Guru99WebAutomation</stat>
+<stat fail="0" id="s1" name="Guru99WebAutomation" pass="1">Guru99WebAutomation</stat>
 </suite>
 </statistics>
 <errors>

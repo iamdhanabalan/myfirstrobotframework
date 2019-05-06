@@ -1,15 +1,16 @@
 *** Settings ***
 Documentation    Test the Guru99 Banking Website
 Library         Selenium2Library
-Resource        guru99Data.robot
 Resource        guru99ObjRepo.robot
+Variables       myconfig.yaml
 Library     CustomLibrary.py
 
 *** Keywords ***
 Open the Guru99 website and login with
 #    Open My Browser
     [Arguments]    ${username}      ${password}
-    Open Browser    http://demo.guru99.com/V4/    Firefox
+    Open Browser    http://demo.guru99.com/V4/      ${custombrowser}
+    #Firefox
     Maximize Browser Window
     Input Text    ${obj_username}    ${username}
     Input Text    ${obj_password}    ${password}
