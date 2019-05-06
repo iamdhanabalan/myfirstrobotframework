@@ -6,15 +6,11 @@ Resource        guru99ObjRepo.robot
 Library     CustomLibrary.py
 
 *** Keywords ***
-Open the Guru99 website
+Open the Guru99 website and login with
 #    Open My Browser
+    [Arguments]    ${username}      ${password}
     Open Browser    http://demo.guru99.com/V4/    Firefox
     Maximize Browser Window
-Title should contain Guru99
-    Title Should Be    ${page_title}
-    Close Browser
-login with
-    [Arguments]    ${username}      ${password}
     Input Text    ${obj_username}    ${username}
     Input Text    ${obj_password}    ${password}
     Click Button    ${obj_loginButton}
@@ -22,8 +18,6 @@ Verify if the dashboard is displayed with
     [Arguments]    ${managerid}
     Page Should Contain Element    ${obj_managerid}
     log to console  User logged in successfully!
-Logout the session
-    Click Link    ${obj_logout}
 Initiate and Confirm the Fund Transfer to the account
     [Arguments]  ${accIDCredit}
     click link  ${obj_FTPage}
@@ -45,4 +39,7 @@ Deposit to the account
     sleep  2s
     click link  ${obj_DP_continue}
     sleep  2s
-    log to console  Fund Transfer Completed
+    log to console  Deposit Process Completed
+Logout the session and close the browser
+    Click Link    ${obj_logout}
+    close browser
