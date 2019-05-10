@@ -1,7 +1,6 @@
 *** Settings ***
 Documentation    Test the Guru99 Banking Website
 Library         Selenium2Library
-Resource        guru99Data.robot
 
 *** Variables ***
 ${page_title}    Guru99 Bank Home Page

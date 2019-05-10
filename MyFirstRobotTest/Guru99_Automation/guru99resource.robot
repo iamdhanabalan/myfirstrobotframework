@@ -3,7 +3,7 @@ Documentation    Test the Guru99 Banking Website
 Library         Selenium2Library
 Resource        guru99Data.robot
 Resource        guru99ObjRepo.robot
-Library     CustomLibrary.py
+Variables       myconfig.yaml
 
 *** Keywords ***
 Open the Guru99 website and login with
