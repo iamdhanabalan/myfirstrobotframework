@@ -1,7 +1,6 @@
 *** Settings ***
 Documentation    Test the Guru99 Banking Website
 Library         Selenium2Library
-Resource        guru99Data.robot
 Resource        guru99ObjRepo.robot
 Variables       myconfig.yaml
 

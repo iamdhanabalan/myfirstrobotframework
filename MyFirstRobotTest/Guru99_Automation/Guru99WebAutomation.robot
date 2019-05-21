@@ -2,7 +2,7 @@
 Documentation    Test the Guru99 Banking Website
 Test Setup         Open the Guru99 website and login with      ${username}     ${password}
 Test Teardown       Logout the session and close the browser
-Resource        guru99resource.robot
+Resource        Resources/guru99resource.robot
 
 *** Test Cases ***
 

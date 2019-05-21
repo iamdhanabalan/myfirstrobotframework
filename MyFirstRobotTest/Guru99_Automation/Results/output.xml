@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20190510 09:26:18.515" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
+<robot rpa="false" generated="20190510 13:01:30.592" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
 <suite source="C:\Users\DHANPALA\MyFirstRobotFramework\MyFirstRobotTest\Guru99_Automation\Guru99WebAutomation.robot" id="s1" name="Guru99WebAutomation">
 <test id="s1-t1" name="Test Case: 001 - The user should be able to login and view the dashboard">
 <kw type="setup" name="Open the Guru99 website and login with" library="guru99resource">
@@ -13,12 +13,12 @@
 <arg>http://demo.guru99.com/V4/</arg>
 <arg>${custombrowser}</arg>
 </arguments>
-<msg timestamp="20190510 09:26:18.870" level="INFO">Opening browser 'chrome' to base url 'http://demo.guru99.com/V4/'.</msg>
-<status status="PASS" endtime="20190510 09:26:26.735" starttime="20190510 09:26:18.870"></status>
+<msg timestamp="20190510 13:01:30.949" level="INFO">Opening browser 'Chrome' to base url 'http://demo.guru99.com/V4/'.</msg>
+<status status="PASS" endtime="20190510 13:01:37.555" starttime="20190510 13:01:30.949"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20190510 09:26:27.952" starttime="20190510 09:26:26.735"></status>
+<status status="PASS" endtime="20190510 13:01:38.776" starttime="20190510 13:01:37.555"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -26,8 +26,8 @@
 <arg>${obj_username}</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20190510 09:26:27.953" level="INFO">Typing text 'mngr191642' into text field 'xpath=//html/body/form/table/tbody/tr[1]/td[2]/input'.</msg>
-<status status="PASS" endtime="20190510 09:26:28.116" starttime="20190510 09:26:27.953"></status>
+<msg timestamp="20190510 13:01:38.777" level="INFO">Typing text 'mngr191642' into text field 'xpath=//html/body/form/table/tbody/tr[1]/td[2]/input'.</msg>
+<status status="PASS" endtime="20190510 13:01:38.926" starttime="20190510 13:01:38.776"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -35,18 +35,18 @@
 <arg>${obj_password}</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20190510 09:26:28.117" level="INFO">Typing text 'tAvetEj' into text field 'xpath=//html/body/form/table/tbody/tr[2]/td[2]/input'.</msg>
-<status status="PASS" endtime="20190510 09:26:28.229" starttime="20190510 09:26:28.116"></status>
+<msg timestamp="20190510 13:01:38.927" level="INFO">Typing text 'tAvetEj' into text field 'xpath=//html/body/form/table/tbody/tr[2]/td[2]/input'.</msg>
+<status status="PASS" endtime="20190510 13:01:39.032" starttime="20190510 13:01:38.926"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${obj_loginButton}</arg>
 </arguments>
-<msg timestamp="20190510 09:26:28.229" level="INFO">Clicking button 'xpath=//html/body/form/table/tbody/tr[3]/td[2]/input[1]'.</msg>
-<status status="PASS" endtime="20190510 09:26:29.230" starttime="20190510 09:26:28.229"></status>
+<msg timestamp="20190510 13:01:39.032" level="INFO">Clicking button 'xpath=//html/body/form/table/tbody/tr[3]/td[2]/input[1]'.</msg>
+<status status="PASS" endtime="20190510 13:01:39.931" starttime="20190510 13:01:39.032"></status>
 </kw>
-<status status="PASS" endtime="20190510 09:26:29.230" starttime="20190510 09:26:18.869"></status>
+<status status="PASS" endtime="20190510 13:01:39.931" starttime="20190510 13:01:30.948"></status>
 </kw>
 <kw name="Verify if the dashboard is displayed with" library="guru99resource">
 <arguments>
@@ -57,17 +57,17 @@
 <arguments>
 <arg>${obj_managerid}</arg>
 </arguments>
-<msg timestamp="20190510 09:26:29.248" level="INFO">Current page contains element 'xpath=//html/body/table/tbody/tr/td/table/tbody/tr[3]/td'.</msg>
-<status status="PASS" endtime="20190510 09:26:29.248" starttime="20190510 09:26:29.231"></status>
+<msg timestamp="20190510 13:01:39.955" level="INFO">Current page contains element 'xpath=//html/body/table/tbody/tr/td/table/tbody/tr[3]/td'.</msg>
+<status status="PASS" endtime="20190510 13:01:39.955" starttime="20190510 13:01:39.931"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>User logged in successfully!</arg>
 </arguments>
-<status status="PASS" endtime="20190510 09:26:29.248" starttime="20190510 09:26:29.248"></status>
+<status status="PASS" endtime="20190510 13:01:39.956" starttime="20190510 13:01:39.955"></status>
 </kw>
-<status status="PASS" endtime="20190510 09:26:29.248" starttime="20190510 09:26:29.231"></status>
+<status status="PASS" endtime="20190510 13:01:39.956" starttime="20190510 13:01:39.931"></status>
 </kw>
 <kw type="teardown" name="Logout the session and close the browser" library="guru99resource">
 <kw name="Click Link" library="Selenium2Library">
@@ -75,22 +75,22 @@
 <arguments>
 <arg>${obj_logout}</arg>
 </arguments>
-<msg timestamp="20190510 09:26:29.249" level="INFO">Clicking link 'xpath=//html/body/div[3]/div/ul/li[15]/a'.</msg>
-<status status="PASS" endtime="20190510 09:26:31.165" starttime="20190510 09:26:29.249"></status>
+<msg timestamp="20190510 13:01:39.957" level="INFO">Clicking link 'xpath=//html/body/div[3]/div/ul/li[15]/a'.</msg>
+<status status="PASS" endtime="20190510 13:01:42.071" starttime="20190510 13:01:39.957"></status>
 </kw>
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20190510 09:26:33.542" starttime="20190510 09:26:31.165"></status>
+<status status="PASS" endtime="20190510 13:01:44.402" starttime="20190510 13:01:42.071"></status>
 </kw>
-<status status="PASS" endtime="20190510 09:26:33.542" starttime="20190510 09:26:29.249"></status>
+<status status="PASS" endtime="20190510 13:01:44.403" starttime="20190510 13:01:39.956"></status>
 </kw>
 <tags>
 <tag>Smoke</tag>
 </tags>
-<status status="PASS" endtime="20190510 09:26:33.542" critical="yes" starttime="20190510 09:26:18.867"></status>
+<status status="PASS" endtime="20190510 13:01:44.403" critical="yes" starttime="20190510 13:01:30.947"></status>
 </test>
 <doc>Test the Guru99 Banking Website</doc>
-<status status="PASS" endtime="20190510 09:26:33.544" starttime="20190510 09:26:18.518"></status>
+<status status="PASS" endtime="20190510 13:01:44.405" starttime="20190510 13:01:30.596"></status>
 </suite>
 <statistics>
 <total>
@@ -105,6 +105,5 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20190510 09:26:18.859" level="ERROR">Error in file 'C:\Users\DHANPALA\MyFirstRobotFramework\MyFirstRobotTest\Guru99_Automation\guru99ObjRepo.robot': Resource file 'guru99Data.robot' does not exist.</msg>
 </errors>
 </robot>
