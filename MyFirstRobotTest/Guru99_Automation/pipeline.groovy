@@ -6,11 +6,14 @@ node {
     }
    stage('Run Tests')
    {
-        bat label: '', script: 'robot -v myconfig.yaml -d Results MyFirstRobotTest\\Guru99_Automation\\Guru99WebAutomation.robot && robotmetrics --inputpath ./Results/'
+     /*   
+      bat label: '', script: 'robot -v myconfig.yaml -d Results MyFirstRobotTest\\Guru99_Automation\\Guru99WebAutomation.robot && robotmetrics --inputpath ./Results/'
+      */
+      currentBuild.result = 'UNSTABLE'
    }
    stage('Generate Report')
    {
-       step([
+      /* step([
         $class : 'RobotPublisher',
         outputPath : 'MyFirstRobotTest/Guru99_Automation/Results',
         outputFileName : "*.xml",
@@ -19,6 +22,7 @@ node {
         unstableThreshold: 95.0,
         otherFiles : "*.png",
         ])
+        */
    }
    stage('Clean WS')
    {
