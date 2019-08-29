@@ -10,7 +10,7 @@ node {
       bat label: '', script: 'robot -v myconfig.yaml -d Results MyFirstRobotTest\\Guru99_Automation\\Guru99WebAutomation.robot && robotmetrics --inputpath ./Results/'
       */
       echo 'Demo worked1'
-      currentBuild.result = 'UNSTABLE'
+      currentBuild.result = 'SUCCESS'
       echo 'Demo worked2'
    }
    stage('Generate Report')
